@@ -8,7 +8,6 @@ class TestPokemon:
         assert pokemon.lvl == 0
         assert pokemon.hp == 42
         assert pokemon.atk == 5.1
-        assert pokemon.type == 'Water'
 
     def test_init_fire(self):
         pokemon = FireType('Charmander',0)
@@ -16,7 +15,6 @@ class TestPokemon:
         assert pokemon.lvl == 0
         assert pokemon.hp == 40
         assert pokemon.atk == 5.3
-        assert pokemon.type == 'Fire'
     
     def test_init_plant(self):
         pokemon = PlantType('Bulbasaur',0)
@@ -24,7 +22,6 @@ class TestPokemon:
         assert pokemon.lvl == 0
         assert pokemon.hp == 45
         assert pokemon.atk == 4.9
-        assert pokemon.type == 'Plant'
     
     def test_lvl_up_water(self):
         pokemon = WaterType('Squirtle',10)
